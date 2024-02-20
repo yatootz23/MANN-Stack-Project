@@ -1,0 +1,3 @@
+<div [ngClass]="{status: todo.status }" class="todo" (dblclick)="onToggle(todo)">
+    <h3>{{ todo.task }} <fa-icon (click)="onDelete(todo)" [style]="{color: 'red'}" [icon]="faTimes"></fa-icon></h3>
+</div>
